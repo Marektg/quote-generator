@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="lang">
+        <button class="langBtn" id="pl"><img src="https://flagcdn.com/pl.svg" width="30" alt="Polska"></button>
+        <button class="langBtn active" id="en"><img src="https://flagcdn.com/gb.svg" width="30" alt="Wielka Brytania"></button>
+    <!-- <img src="https://flagcdn.com/80x60/pl.png" srcset="https://flagcdn.com/160x120/pl.png 2x,
+        https://flagcdn.com/240x180/pl.png 3x" width="40" height="30" alt="Polska"> -->
+
+
+        </div>
     <div class="quote-container" id="quote-container">
         <!-- Quote -->
         <div class="quote-text">
@@ -27,10 +35,16 @@
         <!-- Buttons -->
         <div class="button-container">
            
-            <button id="new" onclick="newQuote()">New Quote</button>
+            <button id="new"></button>
         </div>
     </div>
+
+    <footer>Created by <a href="https://www.linkedin.com/in/marek-kalus-aa3ba8244/" class="student__linkedin" target="_blank" rel="noopener">
+        
+       Marek Kalus
+    </a></footer>
         <!-- Script -->
+        <script src="quotes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

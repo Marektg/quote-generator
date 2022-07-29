@@ -14,9 +14,34 @@ font-family: Montserrat,sean-serif;
 font-weight: 700;
 text-align: center;
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
 }
+.lang {
+  width: 95%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.langBtn{
+  padding: 5px 5px;
+  margin: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.langBtn > img {
+  z-index: 0;
+}
+/* #pl{
+  background-image: url("https://flagcdn.com/pl.svg");
+} */
+.active {
+  background-color: rgba(111, 255, 111, 0.459);
+}
+
 .quote-container {
   width: auto;
   max-width: 900px;
@@ -31,7 +56,11 @@ justify-content: center;
   font-size: 2rem;
 
 }
-.fa-quote-left
+
+.long-quote {
+  font-size: 1.8rem;
+}
+.fa-quote-left,
 .fa-quote-right {
   font-size: 2.5rem;
 }
@@ -59,14 +88,28 @@ justify-content: center;
   padding: 0.5rem 1.8rem;
   box-shadow: 0 0.3rem rgba(121,121,121,0.65);  
 }
+.langBtn:hover,
 #new:hover {
   filter: brightness(120%);
 }
+
 #new:active {
   transform: translate(0, 0.3rem);
   box-shadow: 0 0.1rem rgba(255,255,255,0.65);
 }
-
+footer {
+  display: flex;
+  width: 95%;
+  margin-bottom: 5px;
+  font-weight: 400;
+  justify-content: flex-end;
+  color: rgb(110, 110, 110);
+}
+.student__linkedin {
+  text-decoration: none;
+  color: rgb(110, 110, 110);
+  margin-left: 5px;
+}
 @media screen and (max-width: 1000px) {
   .quote-container{
     margin: auto 10px;
