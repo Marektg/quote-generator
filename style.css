@@ -110,6 +110,7 @@ footer {
   color: rgb(110, 110, 110);
   margin-left: 5px;
 }
+
 @media screen and (max-width: 1000px) {
   .quote-container{
     margin: auto 10px;

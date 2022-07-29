@@ -1,6 +1,4 @@
-// let apiQuotesEn = [];
-console.log(localQuotesEn.length);
-console.log(localQuotesPl.length);
+
 const langPl = document.getElementById('pl');
 const langEn = document.getElementById('en');
 const quoteArrea = document.querySelector("#quote");
@@ -30,24 +28,7 @@ function newQuote() {
     
 }
 
-// async function getQuotes() {
-//     const apiUrl = 'https://type.fit/api/quotes';
-//     try {
-//         const response = await fetch(apiUrl)
-//         apiQuotesEn = await response.json();
-//         console.log(apiQuotesEn.length);
-//         localStorage.setItem("que", JSON.stringify(apiQuotesEn));
-//         newQuote();    
-//     }
-//     catch (error) {
-//         console.log(error.message)
-//     }
-// }
-
-// getQuotes();
-
 const newQuoteBnt = document.getElementById('new');
-// console.log(newQuoteBnt);
 newQuoteBnt.addEventListener('click', newQuote);
 newQuote();
 
